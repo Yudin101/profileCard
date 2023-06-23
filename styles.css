@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+:root{
+	--theme: #32a852;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body{
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: gray;
+}
+
+.card{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 370px;
+	width: 100%;
+	background: white;
+	border-radius: 30px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+	padding: 30px;
+	position: relative;
+}
+
+.card::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 27px 27px 0 0;
+	height: 36%;
+	width: 100%;
+	background: var(--theme);
+}
+
+.image{
+	position: relative;
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+	background-color: var(--theme);
+	padding: 5px;
+	margin-bottom: 15px;
+}
+
+.image .profileImg{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	border-radius: 50%;
+	border: 3px solid white;
+}
+
+.card .text{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: #333;
+}
+
+.text .name{
+	font-size: 22px;
+	font-weight: 500;
+}
+
+.text .bio{
+	font-size: 18px;
+	font-weight: 100;
+}
+
+.card .mediaButtons{
+	display: flex;
+	align-items: center;
+	margin-top: 15px;
+	font-size: 20px;
+}
+
+.mediaButtons .link{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	color: white;
+	height: 34px;
+	width: 34px;
+	margin: 0 8px;
+	background-color: var(--theme);
+	text-decoration: none;
+	border: none;
+}
+
+#facebook{
+	background-color: #4267b2;
+}
+
+#facebook:hover{
+	background-color: #657dad;
+}
+
+#instagram{
+	background-color: #e1306c;
+}
+
+#instagram:hover{
+	background-color: #d16b8d;
+}
+
+#github{
+	background-color: #171515;
+}
+
+#github:hover{
+	background-color: #3b3939;
+}
+
+.card .btn{
+	display: flex;
+	align-items: center;
+	margin-top: 25px;
+}
+
+.buttons .btn{
+	background: var(--theme);
+	padding: 8px 24px;
+	border-radius: 30px;
+	border: none;
+	color: white;
+	font-size: 18px;
+	font-weight: 400;
+	cursor: pointer;
+	transition: 0.4s;
+}
+
+.buttons .btn:hover{
+	background-color: #5eb575;
+}
