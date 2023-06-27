@@ -15,7 +15,7 @@
 
 		<div class="text">
 			<span class="name">Yudin Karki</span>
-			<span class="bio">Student</span>
+			<span class="bio" id="element"></span>
 		</div>
 
 		<div class="mediaButtons">
@@ -38,5 +38,14 @@
 			</a>
 		</div>
 	</div>
+
+	<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+	<script>
+    var typed = new Typed('#element', {
+      strings: ['Student'],
+      typeSpeed: 45,
+      showCursor: false,
+    });
+  </script>
 </body>
 </html>
